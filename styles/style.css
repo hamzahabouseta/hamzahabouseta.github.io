@@ -63,6 +63,6 @@ table {
 #signature {
   text-align: right;
   color: red;
-  font-style: italic;
+  font-family: 'Cardo', serif;
   font-size: 75%;
 }
