@@ -1,0 +1,117 @@
+
+<! This little bit of code started with https://www.wikihow.com/Create-a-Questionnaire-in-HTML and got modified, by then using info from w3schools.com to continue.
+
+This is an UGLY survey....  PLEASE MODIFY IT!
+
+Caroline Barrière
+May 2020
+
+>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<! IMPORTANT to use a CSS file - external >
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>uOttawa Survey</title>
+  </head>
+  
+  <body>
+	<h1>Université d'Ottawa | University of Ottawa</h1>
+	<form id="myform" action="index.php" >
+	<br>
+	<br>
+	<! Choose a website to evaluate >
+	<h3><i>Please complete this survey to help us improve the <a href="http://uottawa.ca" >uOttawa</a> site</i></h3>
+	<br>
+	<br>
+	<! You should make your image clickable>
+        <a href="https://uottawa.ca/">
+	<img src="images/uottawa_ver_white.png" class="center" width="450" height="300">
+	<br>
+            </a>
+	<br>
+	<div class="question">
+	<h2> Personal Information </h2>
+	<p>First name: <input type="text" name="firstname"></p>
+	<p>Last name: <input type="text" name="lastname"></p>
+	<br>
+	<br>
+		
+	</div>	
+        
+        <div class="question">
+		<h2>What year are you in?</h2>
+		<select id="favorite">
+			<option value="First" selected="selected">First</option>
+			<option value="Second">Second</option>
+			<option value="Third">Third</option>
+            <option value="Fourth">Fourth</option>
+            <option value="Fifth+">Fifth +</option>
+		</select>
+	</div>
+        
+    <div class="question">
+        <h2> Is the website informative </h2>
+        <input type="radio" name="Color" value="Red">Yes<br>
+		<input type="radio" name="Color" value="Green">No<br>
+		<input type="radio" name="Color" value="Blue">Kind of<br>
+        
+        </div>
+        
+        <div class="question">
+            <h2> Is the website easy to use? </h2>
+            
+         <div class="likert">
+            
+            <ul class="likert">
+  <li> Strongly Agree </li>
+  <li><input type="radio" name="guilty" value="1" /></li>
+  <li><input type="radio" name="guilty" value="2" /></li>
+  <li><input type="radio" name="guilty" value="3" /></li>
+  <li><input type="radio" name="guilty" value="4" /></li>
+  <li><input type="radio" name="guilty" value="5" /></li>
+  <li> Strong Disagree </li>
+                .
+</ul>
+        </div>
+        
+        </div>
+        
+		
+	<div class="question">
+		<h2> What aspects should be improved in the site </h2>
+		Select at least one option: <br>
+		<input type="checkbox" name="Color" value="Red">Speed<br>
+		<input type="checkbox" name="Color" value="Green">Usability<br>
+		<input type="checkbox" name="Color" value="Blue">Search<br>
+        <input type="checkbox" name="Color" value="Blue">Nothing<br>
+		
+        </div>
+        
+        <div class="question">
+       <h2> Additional Comments:</h2><br>
+	<textarea rows="5" cols="30"></textarea>
+        </div>
+		<br>
+		
+	
+	<br>
+	<br>
+		
+	
+	<br>
+			
+	<button id="submitButton" type="button" class="block">
+		SUBMIT
+	</button>
+		
+	<p id="signature">Site created by Hamzah Abouseta</p>	
+	
+	</form>
+      </form>
+      
+  </body>
+</html> 
